@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 
-export default class FlexDirectionBasics extends Component {
+export default class JustifyContentBasics extends Component {
   render() {
     return (
-      <View style={{flex: 1, flexDirection: 'row'}}>
+      <View style={{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+      }}>
         <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
         <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
         <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
@@ -13,4 +17,4 @@ export default class FlexDirectionBasics extends Component {
   }
 }
 
-AppRegistry.registerComponent('AwesomeProject', () => FlexDirectionBasics);
+AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics);
